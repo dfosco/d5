@@ -10,57 +10,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta property="og:title" content="Daniel Fosco • Product Designer">
   <meta property="og:image" content="https://danielfosco.netlify.app/assets/card-image.png">
-  <meta property="og:description" name="description" content="Product designer working with developer experience &#38; design systems" />
+  <meta property="og:description" name="description" content="Senior product designer working with developer experience &#38; design systems" />
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
   <link href="styles.css" rel="stylesheet" />
   <link href="gap.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 
-<body x-data="{ atTop: false }" class="confetti bg-gray-100 h-screen sans-serif overflow-x-hidden relative">
-  <header class="confetti-dark-animated bg-gray-800">
-    <nav id="top" class="p-6 antialiased m-auto px-8 lg:px-16">
-      <ul class="text-gray-200 text-sm md:text-base font-semibold flex md:justify-end c-gap c-gap-8">
-        <li><a class="hover:underline" href="#design">Design</a></li>
-        <li><a class="hover:underline" href="#code">Code</a></li> 
-        <li><a class="hover:underline" href="#speaking">Speaking</a></li> 
+<body x-data="{ atTop: false }" class="confetti bg-gray-100 text-gray-800 h-screen sans-serif overflow-x-hidden relative">
+  <header class="confetti-dark bg-gray-800">
+    <!--  
+    <nav id="top" class="p-6 antialiased m-auto md:w-full lg:w-4/6 mx-auto px-8 lg:px-16">
+      <ul class="text-gray-100 text-sm md:text-base font-semibold flex md:justify-end c-gap c-gap-8">
+        <li><a class="hover:underline bg-gray-800" href="#design">Design</a></li>
+        <li><a class="hover:underline bg-gray-800" href="#code">Code</a></li> 
+        <li><a class="hover:underline bg-gray-800" href="#speaking">Speaking</a></li> 
       </ul>
     </nav>
+  -->
   </header>
   <main class="overflow-x-hidden">
     <!-- hero -->
-    <section class="confetti-dark-animated bg-gray-800 z-20">
-      <div class="m-auto px-8 lg:px-16 flex flex-col justify-center pt-16 pb-32 px-6 text-gray-200 antialiased">
-        <h1 class="text-3xl md:text-4xl mb-4 font-extrabold antialiased">Daniel Fosco</h1>
-        <h2 class="text-xl sm:w-3/5 mb-8">
-          <p class="mb-3 md:w-4/6 bg-gray-800">
-            I'm a senior product designer building systems that enable people to work, create and collaborate
-            online.
-          </p>
-          <p class="mb-3 md:w-4/6 bg-gray-800">
-            My recent work has been focused on developer experience, payments
-            platforms and design systems.
-          </p>
+    <section class="confetti-dark text-gray-100 bg-gray-800 px-8 lg:px-16 pt-16 pb-32 z-20">
+      <div class="md:w-full lg:w-4/6 mx-auto flex flex-col justify-center gap-8 text-gray-200 antialiased">
+        <h1 class="mt-16 md:w-full lg:w-4/6 flex flex-col">
+          <span class="text-3xl md:text-4xl lg:text-5xl font-bold antialiased">Hey there,</span>
+        </h1>
+        <h2 class="md:w-full lg:w-4/6 flex flex-col gap-6">
+          <p class="text-xl md:text-2xl bg-gray-800">My name is Daniel Fosco and I design systems that enable people to work, code and collaborate online.</p>
+          <p class="text-xl md:text-2xl bg-gray-800">Recently, I have been focusing on Developer Experience, creating tools and platforms that enable developers to write and deploy their code with ease.</p>
         </h2>
-
-        <div>
-          <p class="font-bold mb-4 antialiased">Currently</p>
-          <div class="flex items-start font-medium text-large bg-gray-800">
-            <img alt="Wrench and Hammer emoji" class="mt-1 md:mt-0 h-5 mr-3 w-auto" src="./assets/dev.png" />
-            <p class="mb-2 antialiased">
-              Designing developer tools @
-              <span class="gitlab-orange-underline transition-box-shadow">Gitlab</span>
-            </p>
-          </div>
-
-          <div class="flex items-start font-medium text-large bg-gray-800">
-            <img alt="Planet emoji" class="mt-1 md:mt-0 h-5 mr-3 w-auto" src="./assets/planet.png" />
-            <p class="mb-2 antialiased">
-              Living in The Netherlands
-            </p>
-          </div>
+        <div id="story" class="md:w-full lg:w-4/6 flex flex-col pt-6 gap-6">
+            <p class="text-lg md:text-xl bg-gray-800">I'm currently a <a class="text-miro-400 font-medium" href="https://developers.miro.com">Senior Product Designer at Miro</a>, building a public developer platform on top of the collaboration tool used by 45+ million customers.</p>
+            <p class="text-lg md:text-xl bg-gray-800">Before this, I worked at <a class="text-gitlab-400 font-medium" href="https://www.gitlab.com">GitLab</a>, where I redefined environment management and deployment approvals for the Release product.</p>
+            <p class="text-lg md:text-xl bg-gray-800">Prior to that, I led developer experience and built design systems in the Core Infrastructure department at <a class="text-booking-400 font-medium" href="https://www.booking.com">Booking.com</a>.</p>
         </div>
-        <div class="flex text-base c-gap c-gap-x-16 my-4 pt-8 md:pb-8 text-gray-200 bg-gray-800">
+        <div class="flex text-base c-gap c-gap-x-16 my-4 pt-8 md:pb-8 text-gray-100 bg-gray-800">
           <a class="hover:opacity-75 transition-opacity ease-in duration-200" target="_blank" rel="noopener noreferrer"
             href="https://www.linkedin.com/in/danielfosco">
             <svg class="h-6 w-6 fill-current" role="img" viewBox="0 0 24 24"
@@ -93,11 +78,15 @@
               </path>
             </svg>
           </a>
-          <a class="gl-icon hover:opacity-75 transition-opacity ease-in duration-200" target="_blank" rel="noopener noreferrer"
-            href="https://gitlab.com/dfosco">
-            <svg class="h-6 w-6 fill-current" role="img" title="Gitlab Icon" view-box="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title>Gitlab Icon</title>
-              <path d="M23.955 13.587l-1.342-4.135-2.664-8.189a.455.455 0 00-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587a.924.924 0 00.331 1.023L12 23.054l11.625-8.443a.92.92 0 00.33-1.024"/>
+          <a class="hover:opacity-75 transition-opacity ease-in duration-200" target="_blank" rel="noopener noreferrer"
+            href="https://github.com/dfosco">
+            <svg class="h-6 w-6 fill-current" role="img" title="Github icon" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+              stroke-miterlimit="1.414">
+              <title>Github Icon</title>
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+              </path>            
             </svg>
           </a>
           <!-- // -->
@@ -108,7 +97,7 @@
     <!-- workstreams -->
     <section class="m-auto pt-20 px-8 lg:px-16">
       <!-- dev experience workstream -->
-      <article x-data="{ showDX: false }" class="pt-16 z-20">
+      <article x-data="{ showDX: false }" class="mx-auto md:w-full lg:w-4/6 pt-16 z-20">
         <a class="font-semibold text-gray-900 mb-6 block" id="design">Recent Work</a>
 
         <h3 class="font-bold text-purple-700 mb-4 text-2xl md:text-3xl">Developer Experience</h3>
@@ -273,7 +262,7 @@
       <!-- // dev experience workstream -->
 
       <!-- design systems workstream -->
-      <article x-data="{ showDS: false }" class="my-16">
+      <article x-data="{ showDS: false }" class="my-16 mx-auto md:w-full lg:w-4/6">
         <h3 class="font-bold text-red-700 mb-4 text-2xl md:text-3xl">Design Systems</h3>
         <section id="dx" class="flex flex-col md:flex-row lg:flex-row">
           <div class="text-base flex flex-col c-gap c-gap-6 md:w-1/2 lg:w-2/5 pb-8">
@@ -481,7 +470,7 @@
       <!-- // design systems workstream -->
 
       <!-- payments workstream -->
-      <article x-data="{ showPay: false }" class="mt-16">
+      <article x-data="{ showPay: false }" class="mt-16 mx-auto md:w-full lg:w-4/6">
         <h3 class="font-bold text-pink-700 mb-4 text-2xl md:text-3xl">Payments</h3>
         <section id="pay" class="flex flex-col md:flex-row lg:flex-row mb-16">
           <div class="flex flex-col c-gap c-gap-6 md:w-1/2 lg:w-2/5 pb-8">
@@ -617,7 +606,7 @@
           <div class="flex flex-col">
             <h3 class="text-4xl text-center mb-4">🕐 🕑 🕒</h3>
             <p class="leading-relaxed text-center text-md md:text-xl antialiased font-medium text-gray-100">
-              Browse more projects and uncover old secrets with the <a class="block md:inline text-purple-100 underline" target="_blank" rel="noopener noreferrer" href="/time-machine/v5">Portfolio Time Machine ↗</a>
+              Browse more projects and uncover old secrets with the <a class="block md:inline text-purple-100 underline" target="_blank" rel="noopener noreferrer" href="/time-machine/v4">Portfolio Time Machine ↗</a>
             </p>            
           </div>
         </section>
@@ -627,8 +616,8 @@
     <!-- // workstreams -->
     <!-- code -->
     <section id="code" class="confetti-dark bg-indigo-900">
-      <div class="m-auto px-8 lg:px-16 flex flex-col justify-center pt-16 pb-32 px-6 text-gray-200 antialiased">
-        <h3 class="font-bold text-gray-200 mb-4 text-2xl md:text-3xl">Code</h3>
+      <div class="mx-auto md:w-full lg:w-4/6 m-auto px-8 lg:px-16 flex flex-col justify-center pt-16 pb-32 px-6 text-gray-100 antialiased">
+        <h3 class="font-bold mb-4 text-2xl md:text-3xl">Code</h3>
         <section class="lg:grid grid-cols-2 flex flex-col c-gap c-gap-6">
           <div class="flex flex-col c-gap c-gap-4 mb-8 md:w-3/5 lg:w-full">
             <p class="bg-indigo-900 text-lg md:pr-6">
@@ -653,24 +642,24 @@
             <a href="https://floodtheinbox.netlify.app/" target="_blank" rel="noopener noreferrer"
               class="underline md:no-underline hover:underline flex flex-col col-span-1">
               <img alt="Thumbnail for Flood the Inbox app" src="./assets/code/flood.png" alt="" class="rounded shadow-xl">
-              <p class="text-sm text-gray-200 font-semibold py-3">Flood the
+              <p class="text-sm font-semibold py-3">Flood the
                 Inbox</p>
             </a>
             <a href="https://codepen.io/dfosco/full/QMWweP/" target="_blank" rel="noopener noreferrer"
               class="underline md:no-underline hover:underline flex flex-col col-span-1">
               <img alt="Animated terminal window built with CSS" src="./assets/code/terminal.gif" alt="" class="rounded shadow-xl">
-              <p class="text-sm text-gray-200 font-semibold py-3">Tiny Terminal
+              <p class="text-sm font-semibold py-3">Tiny Terminal
               </p>
             </a>
             <a href="http://mta.surge.sh" target="_blank" rel="noopener noreferrer"
               class="underline md:no-underline hover:underline flex flex-col col-span-1">
               <img alt="MTA CSS is a list of NYC subway stations built with CSS" src="./assets/code/mta.png" alt="" class="rounded shadow-xl">
-              <p class="text-sm text-gray-200 font-semibold py-3">NYC Subway CSS</p>
+              <p class="text-sm font-semibold py-3">NYC Subway CSS</p>
             </a>
             <a href="https://codepen.io/dfosco/pen/eYJrPqJ" target="_blank" rel="noopener noreferrer"
               class="underline md:no-underline hover:underline flex flex-col col-span-1">
               <img alt="Animated CSS progress timeline" src="./assets/code/timeline.gif" alt="" class="rounded shadow-xl">
-              <p class="text-sm text-gray-200 font-semibold py-3">CSS Deployment
+              <p class="text-sm font-semibold py-3">CSS Deployment
                 Timeline</p>
             </a>
           </div>
@@ -679,7 +668,7 @@
     <!-- // code -->
     <!-- speaking -->
     <section id="speaking" class="confetti bg-orange-100">
-      <div class="m-auto px-8 lg:px-16 flex flex-col justify-center pt-16 pb-32 px-6 text-gray-900">
+      <div class="md:w-full lg:w-4/6 m-auto px-8 lg:px-16 flex flex-col justify-center pt-16 pb-32 px-6 text-gray-900">
         <h3 class="font-bold text-red-700 mb-4 text-2xl md:text-3xl">Speaking & Writing</h3>
         <section class="flex flex-col c-gap c-gap-6">
           <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 c-gap c-gap-6">

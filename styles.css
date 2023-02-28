@@ -54,6 +54,11 @@
   background-attachment: fixed;
 }
 
+.confetti-animated {
+  background-image: url('./assets/confetti-animated.svg');
+  background-attachment: fixed;
+}
+
 .confetti-dark-strong {
   background-image: url('./assets/confetti-dark-strong.svg');
   background-attachment: fixed;
@@ -80,13 +85,13 @@
           box-shadow: 0px 4px 0px 0px #7296f1;
 }
 
-.gitlab-orange-underline {
-  -webkit-box-shadow: 0px 2px 0px 0px #FA6A2B;
-          box-shadow: 0px 2px 0px 0px #FA6A2B;
+.yellow-underline {
+  -webkit-box-shadow: 0px 2px 0px 0px #ffd02f;
+          box-shadow: 0px 2px 0px 0px #ffd02f;
 }
-.gitlab-orange-underline:hover {
-  -webkit-box-shadow: 0px 4px 0px 0px #FA6A2B;
-          box-shadow: 0px 4px 0px 0px #FA6A2B;
+.yellow-underline:hover {
+  -webkit-box-shadow: 0px 4px 0px 0px #ffd02f;
+          box-shadow: 0px 4px 0px 0px #ffd02f;
 }
 
 .transition-box-shadow {
@@ -111,6 +116,57 @@
 .dot-between > *:last-child:after {
   content: '';
   margin-right: 4px;
+}
+
+.h-screen-80 {
+  min-height: 80vh;
+}
+
+.text-gitlab-400 {
+  color: #f68045;
+}
+
+.text-miro-400 {
+  color: #fccb5b;
+}
+
+.text-booking-400 {
+  color: #6fabff;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+  h1, h2, #story {
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-4\/6 {
+    width: 85%;
+  }
+
+  h2 p {
+    max-width: 54ch;
+  }
+
+  #story p {
+    max-width: 58ch;
+  }
+}
+
+@media (min-width: 1440px) {
+  .lg\:w-4\/6 {
+    width: 66.666667%;
+    max-width: 1440px;
+  }
+
+  #story p {
+    max-width: 58ch;
+  }
 }
 
 /* @media (max-width: 768px) {
