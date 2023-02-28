@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    Daniel Fosco • Senior Product Designer
+  </title>
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:title" content="Daniel Fosco • Product Designer">
+  <meta property="og:image" content="https://danielfosco.netlify.app/assets/card-image.png">
+  <meta property="og:description" name="description" content="Product designer working with developer experience &#38; design systems" />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <link href="gap.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+
+<body x-data="{ atTop: false }" class="confetti bg-gray-100 h-screen sans-serif overflow-x-hidden relative">
+  <header class="confetti-dark-animated bg-gray-800">
+    <nav id="top" class="p-6 antialiased m-auto px-8 lg:px-16">
+      <ul class="text-gray-200 text-sm md:text-base font-semibold flex md:justify-end c-gap c-gap-8">
+        <li><a class="hover:underline" href="#design">Design</a></li>
+        <li><a class="hover:underline" href="#code">Code</a></li> 
+        <li><a class="hover:underline" href="#speaking">Speaking</a></li> 
+      </ul>
+    </nav>
+  </header>
+  <main class="overflow-x-hidden">
+    <!-- hero -->
+    <section class="confetti-dark-animated bg-gray-800 z-20">
+      <div class="m-auto px-8 lg:px-16 flex flex-col justify-center pt-16 pb-32 px-6 text-gray-200 antialiased">
+        <h1 class="text-3xl md:text-4xl mb-4 font-extrabold antialiased">Daniel Fosco</h1>
+        <h2 class="text-xl sm:w-3/5 mb-8">
+          <p class="mb-3 md:w-4/6 bg-gray-800">
+            I'm a senior product designer building systems that enable people to work, create and collaborate
+            online.
+          </p>
+          <p class="mb-3 md:w-4/6 bg-gray-800">
+            My recent work has been focused on developer experience, payments
+            platforms and design systems.
+          </p>
+        </h2>
+
+        <div>
+          <p class="font-bold mb-4 antialiased">Currently</p>
+          <div class="flex items-start font-medium text-large bg-gray-800">
+            <img alt="Wrench and Hammer emoji" class="mt-1 md:mt-0 h-5 mr-3 w-auto" src="./assets/dev.png" />
+            <p class="mb-2 antialiased">
+              Designing developer tools @
+              <span class="gitlab-orange-underline transition-box-shadow">Gitlab</span>
+            </p>
+          </div>
+
+          <div class="flex items-start font-medium text-large bg-gray-800">
+            <img alt="Planet emoji" class="mt-1 md:mt-0 h-5 mr-3 w-auto" src="./assets/planet.png" />
+            <p class="mb-2 antialiased">
+              Living in The Netherlands
+            </p>
+          </div>
+        </div>
+        <div class="flex text-base c-gap c-gap-x-16 my-4 pt-8 md:pb-8 text-gray-200 bg-gray-800">
+          <a class="hover:opacity-75 transition-opacity ease-in duration-200" target="_blank" rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/danielfosco">
+            <svg class="h-6 w-6 fill-current" role="img" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <title>LinkedIn icon</title>
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+              </path>
+            </svg>
+          </a>
+          <a class="hover:opacity-75 transition-opacity ease-in duration-200" target="_blank" rel="noopener noreferrer"
+            href="https://twitter.com/dfosco">
+            <svg class="h-6 w-6 fill-current" role="img" title="Twitter icon" viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+              stroke-miterlimit="1.414">
+              <title>Twitter Icon</title>
+              <path
+                d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z"
+                fill-rule="nonzero"></path>
+            </svg>
+          </a>
+          <a class="hover:opacity-75 transition-opacity ease-in duration-200" target="_blank" rel="noopener noreferrer"
+            href="https://dribbble.com/dfosco">
+            <svg class="h-6 w-6 fill-current" role="img" title="Dribbble icon" viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+              stroke-miterlimit="1.414">
+              <title>Dribbble Icon</title>
+              <path
+                d="M8 16c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm6.747-6.905c-.234-.074-2.115-.635-4.257-.292.894 2.456 1.258 4.456 1.328 4.872 1.533-1.037 2.624-2.68 2.93-4.58zM10.67 14.3c-.102-.6-.5-2.688-1.46-5.18l-.044.014C5.312 10.477 3.93 13.15 3.806 13.4c1.158.905 2.614 1.444 4.194 1.444.947 0 1.85-.194 2.67-.543zm-7.747-1.72c.155-.266 2.03-3.37 5.555-4.51.09-.03.18-.056.27-.08-.173-.39-.36-.778-.555-1.16-3.413 1.02-6.723.977-7.023.97l-.003.208c0 1.755.665 3.358 1.756 4.57zM1.31 6.61c.307.005 3.122.017 6.318-.832-1.132-2.012-2.353-3.705-2.533-3.952-1.912.902-3.34 2.664-3.784 4.785zM6.4 1.368c.188.253 1.43 1.943 2.548 4 2.43-.91 3.46-2.293 3.582-2.468C11.323 1.827 9.736 1.176 8 1.176c-.55 0-1.087.066-1.6.19zm6.89 2.322c-.145.194-1.29 1.662-3.816 2.694.16.325.31.656.453.99.05.117.1.235.147.352 2.274-.286 4.533.172 4.758.22-.015-1.613-.59-3.094-1.543-4.257z">
+              </path>
+            </svg>
+          </a>
+          <a class="gl-icon hover:opacity-75 transition-opacity ease-in duration-200" target="_blank" rel="noopener noreferrer"
+            href="https://gitlab.com/dfosco">
+            <svg class="h-6 w-6 fill-current" role="img" title="Gitlab Icon" view-box="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Gitlab Icon</title>
+              <path d="M23.955 13.587l-1.342-4.135-2.664-8.189a.455.455 0 00-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587a.924.924 0 00.331 1.023L12 23.054l11.625-8.443a.92.92 0 00.33-1.024"/>
+            </svg>
+          </a>
+          <!-- // -->
+        </div>
+      </div>
+    </section>
+    <!-- // hero -->
+    <!-- workstreams -->
+    <section class="m-auto pt-20 px-8 lg:px-16">
+      <!-- dev experience workstream -->
+      <article x-data="{ showDX: false }" class="pt-16 z-20">
+        <a class="font-semibold text-gray-900 mb-6 block" id="design">Recent Work</a>
+
+        <h3 class="font-bold text-purple-700 mb-4 text-2xl md:text-3xl">Developer Experience</h3>
+        <section id="dx" class="flex flex-col md:flex-row lg:flex-row">
+          <div class="flex flex-col c-gap c-gap-6 md:w-1/2 lg:w-2/5 pb-8">
+            <p>
+              Working in the Core Infrastructure group at Booking.com, I lead the design of developer tools for deployments, virtualization, reliability, databases, monitoring, and more.
+            </p>
+
+            <p>
+              My process included the entire design and development flow: defining scope with product managers, running
+              user research and discovery sessions, designing screens & flows, and collaborating with engineers on
+              implementation.
+            </p>
+
+            <p>
+              I also worked on the department level to improve research, usability and navigation across all developer
+              products, collaborating with multiple teams in the process.
+            </p>
+
+            <!-- core infra quote -->
+            <div>
+              <blockquote class="mb-8 md:my-4 text-sm text-gray-800 pl-4 border-l-2 border-purple-900">
+                <p class="mb-4">
+                  Daniel is a definition of overachiever. He is a UX researcher, Product Manager, Stakeholder manager
+                  and
+                  Designer = all
+                  in one.
+                </p>
+                <p class="mb-4">
+                  He loves what he does, and it shows - the energy and love he gives products he builds is infectious.
+                  He
+                  never leaves things as he found them: from design process, in-depth research or feature improvement
+                  ideas.
+                </p>
+
+                <a href="https://www.linkedin.com/in/mariascerbik/" target="_blank" rel="noopener noreferrer"
+                  class="text-purple-700 font-semibold hover:underline">Maria Scerbikova – Group Product
+                  Manager</a>
+              </blockquote>
+            </div>
+            <!-- // core infra quote -->
+    
+            <button type="button" x-on:click="showDX = !showDX" x-on:click.debounce.50="document.getElementById('dx-see-more').scrollIntoView({behavior: 'smooth', block: 'start'})" x-text="!showDX ? 'See more ↓' : 'See less ↑'"
+              class="no-portfolio flex text-left font-bold text-purple-700 text-base block hover:underline" />
+          </div>
+          <div class="md:w-1/2 lg:w-3/5 md:px-8 lg:pl-12 lg:pr-0">
+            <img alt="Screenshots showing Deployments and Developer Console projects" class="h-auto w-full mr-3 overflow-hidden rounded"
+              src="./assets/projects/dx/dx.png" />
+          </div>
+        </section>
+        <!-- Expandable Section -->
+        <section x-show.transition.origin.top.in="showDX" class="bg-gray-500 -mx-16 my-16 px-16 py-12 bg-opacity-25"
+          id="dx-see-more">
+          <!-- dev console project -->
+          <div class="my-16" id="dev-console">
+            <h5 class="font-medium text-gray-700 mb-0 text-body">Booking.com</h5>
+            <h4 class="font-bold text-purple-700 mb-6 text-2xl">Developer Console</h4>
+            <div class="flex flex-col c-gap c-gap-4 md:w-1/2 lg:w-2/5 pt-4 pb-8">
+              <p>
+                Developer Console is a structured directory of all developer tools at Booking. It was created to improve
+                discovery and navigation across tools, while also improving usability horizontally.
+              </p>
+              <p>The project was backed by extensive user research, and designed in a way it could be integrated in any
+                existing tool by its owners, regardless of technical stack.</p>
+              <p>Today, the console lists 70+ tools and is integrated in 20+ clients across the company, reaching more
+                than 95% of the developer user base.</p>
+            </div>
+            <h5 class="font-medium text-gray-700 m-0 text-body">Role</h5>
+            <ul class="dot-between leading-8 flex flex-wrap flex-row font-medium text-purple-700 mb-10 text-body">
+              <li>UX Research</li>
+              <li>UX Design</li>
+              <li>UI Design</li>
+              <li>Front-end Development</li>
+            </ul>              
+            <div class="flex flex-col md:grid grid-cols-6 grid-rows-2 gap-4 c-gap c-gap-6">
+              <img alt="Homepage for Developer Console"
+                class="w-full col-span-4 row-span-2 mr-3 shadow-xl overflow-hidden rounded"
+                src="./assets/projects/dx/dev-1.png" />
+              <img alt="Integration docs for developer console widget" class="w-full col-span-2 mr-3 shadow-xl overflow-hidden rounded"
+                src="./assets/projects/dx/dev-3.png" />
+              <img alt="Slide with summary from Dev Experience design sprint" class="w-full col-span-2 mr-3 shadow-xl overflow-hidden rounded"
+                src="./assets/projects/dx/dev-4.png" />
+
+              <img alt="Integrated Developer Console widget" class="w-full col-span-3 mr-3 shadow-xl overflow-hidden rounded"
+                src="./assets/projects/dx/dev-2.png" />
+              <img alt="Example slide from dev experience design sprint" class="w-full col-span-3 mr-3 shadow-xl overflow-hidden rounded"
+                src="./assets/projects/dx/dev-5.png" />
+            </div>
+          </div>
+          <!-- // dev console project -->
+          <!-- ux research project -->
+          <div class="mb-16" id="ux-research">
+            <h5 class="font-medium text-gray-700 mb-0 text-body">Booking.com</h5>
+            <h4 class="font-bold text-purple-700 mb-6 text-2xl">UX Research Practice</h4>
+            <div class="flex flex-col c-gap c-gap-4 md:w-1/2 lg:w-2/5 pt-4 pb-8">
+              <p>A lot of my time in the Developer Experience track was dedicated to make research and discovery first-class citizens on every project I worked on.</p>
+
+              <p>Conducting user and stakeholder interviews, usability tests, surveys and discovery workshops was the
+                bread and butter of my research work.</p>
+
+              <p>To make sure research results would actualy impact the projects, we invited developers into sessions, communicated results to the community and held open-sessions where any team could come to us
+                for guidance and design help.</p>
+            </div>
+            <h5 class="font-medium text-gray-700 m-0 text-body">Role</h5>
+            <ul class="dot-between leading-8 flex flex-wrap flex-row font-medium text-purple-700 mb-10 text-body">
+              <li>UX Research</li>
+              <li>Workshop Facilitation</li>
+              <li>Stakeholder Management</li>
+            </ul>            
+            <div class="flex flex-col md:grid grid-cols-4 c-gap c-gap-y-6 gap-6 grid-flow-row">
+              <img alt="Document with blurred summary of Roadmap Workshop" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                src="./assets/projects/dx/uxr-1.png" />
+
+              <img alt="Document with blurred summary of Product Discovery Workshop" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                src="./assets/projects/dx/uxr-3.png" />
+
+              <img alt="Document with blurred summary of Stakeholder Interviews" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                src="./assets/projects/dx/uxr-2.png" />
+
+              <img alt="Document with blurred summary of Usability Testing" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                src="./assets/projects/dx/uxr-4.png" />
+            </div>
+          </div>
+          <!-- // ux research project -->          
+          <!-- vm project -->
+          <div class="my-16" id="vm-provisioning">
+            <h5 class="font-medium text-gray-700 mb-0 text-body">Booking.com</h5>
+            <h4 class="font-bold text-purple-700 mb-6 text-2xl">VM Provisioning</h4>
+            <div class="flex flex-col c-gap c-gap-4 md:w-1/2 lg:w-2/5 pt-4 pb-8">
+              <p>The VM Provisioning Portal enables developers to create, update and maintain their VMs. Built in 2018, the project now required an iteration to match the needs of the new underlying VM infrastructure.</p>
+
+              <p>After interviewing stakeholders and understanding the requirements, I redesigned the interface to allow users to run multiple changes to their VMs in batch, queue multiple batches, and manage resource quotas.</p>
+              
+              <p>To make sure the UI was kept in sync with the back-end, multiple states were designed, and the final components and behaviours were documented in detail for the development team to implement.</p>
+            </div>
+            <h5 class="font-medium text-gray-700 m-0 text-body">Role</h5>
+            <ul class="dot-between leading-8 flex flex-wrap flex-row font-medium text-purple-700 mb-10 text-body">
+              <li>UX Design</li>
+              <li>UI Design</li>
+            </ul>
+
+            <div class="flex flex-col md:grid grid-cols-6 grid-flow-row-dense grid-rows-4 gap-4 c-gap c-gap-6">
+              <img alt="Homepage for VM Provisioning UI"
+                class="w-full col-span-4 row-span-2 mr-3 shadow-xl overflow-hidden rounded"
+                src="./assets/projects/dx/vm-3.png" />
+              <img alt="Overview of design mockups for VM Provisioning"
+                class="w-full col-span-4 row-span-2 mr-3 shadow-xl overflow-hidden rounded"
+                src="./assets/projects/dx/vm-4.png" />
+              <img alt="User flow for VM Provisioning"
+                class="w-full col-span-2 row-span-2 mr-3 shadow-xl overflow-hidden rounded"
+                src="./assets/projects/dx/vm-2.png" />
+              <img alt="Project Planning and Delivery Doc"
+                class="w-full col-span-2 row-span-2 mr-3 shadow-xl overflow-hidden rounded"
+                src="./assets/projects/dx/vm-1.png" />
+            </div>
+          </div>
+          <!-- // vm project -->
+        </section>   
+        <!-- // Expandable Section -->
+      </article>
+      <!-- // dev experience workstream -->
+
+      <!-- design systems workstream -->
+      <article x-data="{ showDS: false }" class="my-16">
+        <h3 class="font-bold text-red-700 mb-4 text-2xl md:text-3xl">Design Systems</h3>
+        <section id="dx" class="flex flex-col md:flex-row lg:flex-row">
+          <div class="text-base flex flex-col c-gap c-gap-6 md:w-1/2 lg:w-2/5 pb-8">
+            <p>
+              Working with developer tools at Booking, I expanded the design system with a library of components to enable any developer to build better tools, faster.
+            </p>
+
+            <p>
+              More recently, I have designed tools, guidelines and documentation to scale and improve the design system for all consumer products at Booking.
+            </p>
+
+            <!-- design systems quote -->
+            <div>
+              <blockquote class="mb-8 md:my-4 text-sm text-gray-800 pl-4 border-l-2 border-red-900">
+                <p class="mb-4">
+                  Daniel and I worked on the Booking.com Design System and its extension to a product development framework. 
+                </p>
+                <p class="mb-4">
+                  He is very capable of high level thinking, planning and documenting, with a talent for understanding and operating the impact of systems design on developer experience, and therefore the product. He has contributed greatly to the quality and scale of our systems here at Booking.com
+                </p>
+
+                <a href="https://www.linkedin.com/in/ardakaracizmeli/" target="_blank" rel="noopener noreferrer"
+                  class="text-red-700 font-semibold hover:underline">
+                  Arda Karacizmeli – Lead Designer
+                </a>
+              </blockquote>
+            </div>
+            <!-- // design systems quote -->
+
+            <button type="button" x-on:click="showDS = !showDS" x-on:click.debounce.50="document.getElementById('ds-see-more').scrollIntoView({behavior: 'smooth', block: 'start'})" x-text="!showDS ? 'See more ↓' : 'See less ↑'"
+              class="no-portfolio flex text-left font-bold text-red-700 text-base block hover:underline" />
+          </div>
+          <div class="md:w-1/2 lg:w-3/5 md:px-8 lg:pl-12 lg:pr-0">
+            <img alt="Infra Components documentation and components example" class="h-auto w-full mr-3 overflow-hidden rounded"
+              src="./assets/projects/ds/ds.png" />
+          </div>
+        </section>
+        <!-- Expandable Section -->
+        <section id="ds-see-more" x-show.transition.origin.top.in="showDS" class="bg-gray-500 -mx-16 -mb-16 my-16
+                      px-16 py-12 bg-opacity-25">
+          <!-- infra components project -->
+          <div id="design-systems" class="mb-16">
+            <h5 class="font-medium text-gray-700 mb-0 text-body">Booking.com</h5>
+            <h4 class="font-bold text-red-700 mb-6 text-2xl">BUI Infra Components</h4>
+            <div class="flex flex-col c-gap c-gap-4 md:w-1/2 lg:w-2/5 pt-4 pb-8">
+              <p>
+                As a team that built internal tools, we quickly realized we were constantly redesigning and rebuilding components between projects.
+              </p>
+              <p>
+                To increase development speed and scale our efforts, we created <b>BUI Infra Components</b>, a library of React components and documentation to enable any developer to easily build an internal tool.
+              </p>
+
+              <p>Working with our front-end developer, I was responsible for designing and coding most of the components, writing and building our documentation site, and validating the library with our users.</p>
+
+              <p>This project resulted in better consistency and usability for our internal tools, with infrastructure teams independently creating applications and iterating features using our components!</p>
+            </div>
+            <h5 class="font-medium text-gray-700 m-0 text-body">Role</h5>
+            <ul class="dot-between leading-8 flex flex-wrap flex-row font-medium text-red-700 mb-10 text-body">
+              <li>UX Research</li>
+              <li>UX Design</li>
+              <li>UI Design</li>
+              <li>Front-end Development</li>
+              <li>Product Management</li>
+            </ul>  
+            <!-- bui infra gallery -->           
+            <div class="flex flex-col md:grid grid-cols-2 c-gap gap-4 c-gap-6">
+              <!-- onboarding row -->
+              <div class="flex flex-col md:grid grid-cols-3 col-span-2 gap-4 c-gap-6">
+                <img alt="Infra components documentation" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                  src="./assets/projects/ds/onboarding/ds-onboarding--1.png" />
+
+                <img alt="Infra components documentation" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                  src="./assets/projects/ds/onboarding/ds-onboarding--2.png" />
+
+                <img alt="Infra components documentation" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                  src="./assets/projects/ds/onboarding/ds-onboarding--3.png" />
+              </div>
+              <div class="col-span-2 text-center text-sm mb-3 font-medium text-gray-600">Onboarding documentation and example application for the library</div>
+              <!-- // onboarding row -->
+
+              <!-- components row -->
+              <div class="flex flex-col md:grid grid-cols-3 col-span-2 gap-4 c-gap-6">
+                <div class="flex flex-col col-span-2 gap-4 c-gap-6">
+                  <img alt="Infra components documentation" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                    src="./assets/projects/ds/components/ds-components--1.png" />
+                  <div class="col-span-2 text-center hidden md:block md:text-left text-sm mb-3 font-medium text-gray-600">Component structure and live component examples in the documentation</div>
+                </div>
+                <div class="flex flex-col md:grid md:mt-4 col-span-1 gap-4 c-gap-6">
+                <img alt="Infra components documentation" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                  src="./assets/projects/ds/components/ds-components--2.png" />
+
+                <img alt="Infra components documentation" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                  src="./assets/projects/ds/components/ds-components--3.png" />
+
+                <img alt="Infra components documentation" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                src="./assets/projects/ds/components/ds-components--4.png" />
+                </div>
+                <div class="col-span-2 text-center text-sm mb-3 md:hidden font-medium text-gray-600">Component structure and live component examples in the documentation</div>
+              </div>
+              <!-- // components row -->
+
+              <!-- adoption row -->
+              <div class="flex flex-col md:grid grid-cols-3 col-span-2 gap-4 c-gap-6">
+                <!-- left block -->
+                <div class="flex flex-col col-span-2 gap-4 c-gap-6">
+                  <div class="flex flex-col md:flex-row gap-4 c-gap-6">
+                    <img alt="Infra components documentation" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                        src="./assets/projects/ds/adoption/ds-adoption--1.png" />
+                    <img alt="Infra components documentation" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                      src="./assets/projects/ds/adoption/ds-adoption--2.png" />
+                  </div>
+                  <div class="max-w-lg text-left text-sm mb-3 hidden md:block font-medium text-gray-600">Fostering adoption for the library included running usability testing for the onboarding flow, release management and providing open sessions for teams</div>
+                </div>
+                <!-- // left block -->
+                <div class="flex flex-col gap-4 c-gap-6">
+                <img alt="Infra components documentation" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                  src="./assets/projects/ds/adoption/ds-adoption--3.png" />
+                  <img alt="Infra components documentation" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                  src="./assets/projects/ds/adoption/ds-adoption--4.png" />
+                </div>
+              </div>
+              <div class="col-span-2 text-center text-sm mb-3 md:hidden font-medium text-gray-600">Fostering adoption for the library included running usability testing for the onboarding flow, release management and providing open sessions for teams</div>
+              <!-- // onboarding row -->
+
+            </div>
+            <!-- // bui infra gallery -->
+          </div>
+          <!-- // infra components project -->
+
+          <!-- react@booking project -->
+          <div id="react-booking" class="mb-16">
+            <h5 class="font-medium text-gray-700 mb-0 text-body">Booking.com</h5>
+            <h4 class="font-bold text-red-700 mb-6 text-2xl">React @ Booking</h4>
+            <div class="flex flex-col c-gap c-gap-4 md:w-1/2 lg:w-2/5 pt-4 pb-8">
+              <p>
+                As we released our <b>BUI Infra</b> component library, it became evident the need to increase adoption of React in Core Infrastructure, since the group was composed mostly of back-end developers and SREs.
+              </p>
+              <p>
+                To spread knowledge on the community, I created a mini-documentation site named <b>React Basics</b>, to help developers learn the ropes within the context of our library.
+              </p>
+
+              <p>To facilitate rapid prototyping and exploration with <b>BUI Infra</b>, I built and deployed a browser-based editor, using the <code>react-live</code> library.</p>
+
+              <p>This editor already has all necessary dependencies pre-installed, making it an easy-to-use environment to play with the components!</p>
+
+            </div>
+            <h5 class="font-medium text-gray-700 m-0 text-body">Role</h5>
+            <ul class="dot-between leading-8 flex flex-wrap flex-row font-medium text-red-700 mb-10 text-body">
+              <li>Front-end Development</li>
+              <li>Documentation</li>
+              <li>Community Outreach</li>
+            </ul>  
+            <!-- react@booking gallery -->
+            <div class="flex flex-col md:grid grid-cols-6 c-gap c-gap-y-6 gap-4">
+              <div class="flex flex-col col-span-2 c-gap-6 gap-4">
+                <img alt="Document with blurred summary of Roadmap Workshop" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                  src="./assets/projects/ds/react/ds-react--1.png" />
+
+                <img alt="Document with blurred summary of Product Discovery Workshop" class="w-full mr-3 shadow-xl overflow-hidden rounded"
+                  src="./assets/projects/ds/react/ds-react--2.png" />
+              </div>
+              <img alt="Document with blurred summary of Stakeholder Interviews" class="col-span-4 w-full mr-3 shadow-xl overflow-hidden rounded"
+                src="./assets/projects/ds/react/ds-react--3.png" />
+              <div class="col-span-6 text-center text-sm mb-3 font-medium text-gray-600">The browser editor proved to be a very useful tool for quick sessions of pair-programming and debugging layout issues</div>
+            </div>
+            <!-- // react@booking gallery -->
+
+          </div>
+          <!-- // react@booking project -->     
+
+       <!-- figma rollout project -->
+          <div id="figma-rollout" class="mb-16">
+            <h5 class="font-medium text-gray-700 mb-0 text-body">Booking.com</h5>
+            <h4 class="font-bold text-red-700 mb-6 text-2xl">Figma Rollout</h4>
+            <div class="flex flex-col md:flex-row">
+              <div class="flex flex-col c-gap c-gap-4 md:w-1/2 lg:w-2/5 pt-4 pb-8">
+                <p>
+                  As senior designer, I was part of the group that rolled out Figma to (many) hundreds of users at Booking, between designers, copywriters, PMs, and developers.
+                </p>
+                <p>
+                  This work included writing documentation, creating FAQs, and interacting with the design community, but also: learning about SSO, debugging RBAC permissions and <i>many</i> support calls with the Figma team.
+                </p>
+                <p>It was a wild ride, and way outside of the usual realm of responsibilities of a designer, but bringing such a great tool to our community was definitely worth the effort!</p>
+                <div>
+                  <h5 class="font-medium text-gray-700 m-0 text-body">Role</h5>
+                  <ul class="dot-between leading-8 flex flex-wrap flex-row font-medium text-red-700 mb-10 text-body">
+                    <li>Program Management</li>
+                    <li>Documentation</li>
+                    <li>Community Outreach</li>
+                  </ul>                 
+                </div>
+              </div>
+              <div class="flex justify-center md:w-1/2 lg:w-3/5 pt-4 pb-8">
+                 <img alt="Document with blurred summary of Roadmap Workshop" class="h-auto w-90 md:h-90 md:w-3/5"
+                  src="./assets/projects/ds/figma/ds-figma--1.png" />
+              </div>
+            </div> 
+          </div>
+          <!-- // figma rollout project -->     
+
+
+        </section>
+        <!-- // Expandable Section -->
+      </article>
+      <!-- // design systems workstream -->
+
+      <!-- payments workstream -->
+      <article x-data="{ showPay: false }" class="mt-16">
+        <h3 class="font-bold text-pink-700 mb-4 text-2xl md:text-3xl">Payments</h3>
+        <section id="pay" class="flex flex-col md:flex-row lg:flex-row mb-16">
+          <div class="flex flex-col c-gap c-gap-6 md:w-1/2 lg:w-2/5 pb-8">
+            <p>
+              I've worked on multiple areas of the payments space, designing for customer interfaces, merchant products,
+              documentation
+              and APIs.
+            </p>
+
+            <p>
+              For Booking Payments, I designed a cross-platform rewards system and worked on payment
+              workflows for customers.
+            </p>
+
+            <p>For the VTEX commerce platform, I led the team behind a brand-new merchant documentation platform and re-designed order management flows and screens for
+              customers.</p>
+
+
+            <button type="button" x-on:click="showPay = !showPay" x-on:click.debounce.50="document.getElementById('pay-see-more').scrollIntoView({behavior: 'smooth', block: 'start'})" x-text="!showPay ? 'See more ↓' : 'See less ↑'"
+              class="no-portfolio flex text-left font-bold text-pink-700 text-base block hover:underline" />
+          </div>
+          <div class="md:w-1/2 lg:w-3/5 md:px-8 lg:pl-12 lg:pr-0">
+            <img alt="Screenshots for My Rewards and VTEX Help" class="h-auto w-full mr-3 overflow-hidden rounded"
+              src="./assets/projects/pay/pay.png" />
+          </div>
+        </section>
+        <!-- Expandable Section -->
+        <section id="pay-see-more" x-show.transition.origin.top.in="showPay"
+          class="flex flex-col bg-gray-500 -mx-16 mt-16 px-16 py-12 bg-opacity-25">
+          <!-- vtex help project -->
+          <div id="vtex-help" class="mb-16">
+            <h5 class="font-medium text-gray-700 mb-0 text-body">VTEX Commerce</h5>
+            <h4 class="font-bold text-pink-700 mb-6 text-2xl">Documentation Platform</h4>
+
+            <div class="flex flex-col c-gap c-gap-4 gap-4 md:w-1/2 lg:w-2/5 pt-4 pb-8">
+              <p>
+                The documentation center for the VTEX Commerce platform provides an easy way for
+                merchants and developers to understand and integrate with the platform.
+              </p>
+              <p> 
+                I was product designer and project lead for the new platform, working from initial project pitch and proof of concept,
+                through design, validation and development.
+              </p>
+              <p>
+                The work on this project gave start to the knowledge team, today a larger team responsible for all the
+                documentation and
+                educational content for the platform.
+              </p>
+              <p>See a <a class="underline text-pink-700 font-semibold" target="_blank" rel="noopener noreferrer"
+                  href="https://medium.com/@dfosco/vtex-help-bbcf9e6c6863">comprehensive case study</a> for this
+                project.</p>
+
+
+            </div>
+            <h5 class="font-medium text-gray-700 m-0 text-body">Role</h5>
+            <ul class="dot-between leading-8 flex flex-wrap flex-row font-medium text-pink-700 mb-10 text-body">
+              <li>UX Research</li>
+              <li>UX Design</li>
+              <li>UI Design</li>
+              <li>Front-end Development</li>
+            </ul>             
+            <div class="flex flex-col md:grid grid-cols-6 gap-6 c-gap c-gap-6">
+              <img alt="Old version of VTEX Help" class="w-full col-span-3 shadow-xl rounded"
+                src="./assets/projects/pay/help/help-1.png" />
+              <img alt="Updated version of VTEX Help" class="w-full col-span-3 shadow-xl rounded"
+                src="./assets/projects/pay/help/help-8.png" />
+              <span class="col-span-6 text-center text-sm mb-3 font-semibold text-gray-700">Old and new versions for
+                Help Center</span>
+              <img alt="Research summary docs (in portuguese)" class="w-full col-span-2"
+                src="./assets/projects/pay/help/help-2.png" />
+              <img alt="Category page in VTX Help" class="w-full col-span-4  shadow-xl rounded"
+                src="./assets/projects/pay/help/help-4.png" />
+              <img alt="Information architecture and content structure" class="w-full col-span-3"
+                src="./assets/projects/pay/help/help-5.png" />
+              <img alt="Pull Request examples on Github" class="w-full col-span-3"
+                src="./assets/projects/pay/help/help-7.png" />
+            </div>
+          </div>
+          <!-- // vtex help project -->
+          <!-- rewards project -->
+          <div id="rewards" class="mb-16">
+            <h5 class="font-medium text-gray-700 mb-0 text-body">Booking.com</h5>
+            <h4 class="font-bold text-pink-700 mb-6 text-2xl">My Rewards</h4>
+            <div class="flex flex-col c-gap c-gap-4 md:w-1/2 lg:w-2/5 pt-4 pb-8">
+              <p>My Rewards is a central hub to consolidate all rewards a customer can get on Booking.com, to better
+                communicate status to customers and streamline the payment workflow.</p>
+
+              <p>The project was designed across multiple platforms: web, mobile, iOS, Android and emails. We also added
+                rewards information to the tool used by customer service agents, so they could better resolve
+                reward-related tickets.
+              </p>
+
+              <p>
+                Besides design and research, I also worked on the front-end implementation and collaborated with
+                back-end developers on the API spec.
+              </p>
+            </div>
+            <h5 class="font-medium text-gray-700 m-0 text-body">Role</h5>
+            <ul class="dot-between leading-8 flex flex-wrap flex-row font-medium text-pink-700 mb-10 text-body">
+              <li>UX Research</li>
+              <li>UX Design</li>
+              <li>UI Design</li>
+              <li>Front-end Development</li>
+            </ul>             
+            <div class="flex flex-col md:grid grid-cols-6 gap-4 c-gap c-gap-6">
+              <img alt="My Rewards page on desktop web" class="w-full col-span-3 col-row-2 shadow-xl"
+                src="./assets/projects/pay/rewards/rew-1.png" />
+              <figure class="grid grid-cols-2 col-span-3 c-gap c-gap-6">
+                <img alt="My Rewards page on mobile web" class="w-full shadow-xl"
+                  src="./assets/projects/pay/rewards/rew-2.png" />
+                <div class="flex flex-col c-gap c-gap-6">
+                  <img alt="My Rewards email notification for paid reward" class="w-full shadow-xl"
+                    src="./assets/projects/pay/rewards/rew-3.png" />
+                  <img alt="My Rewards email notification for missing details" class="w-full shadow-xl"
+                    src="./assets/projects/pay/rewards/rew-4.png" />
+                </div>
+              </figure>
+              <img alt="Summary doc for Workshop for Bank Transfer refunds" class="w-full col-span-2 col-row-2 shadow-xl"
+                src="./assets/projects/pay/rewards/rew-5.png" />
+              <img alt="User and state flow for the product" class="w-full col-span-4 shadow-xl"
+                src="./assets/projects/pay/rewards/rew-6.png" />
+
+            </div>
+          </div>
+          <!-- // rewards project -->
+        </section>
+        <!-- // Expandable Section -->
+      </article>
+      <!-- // payments workstream -->
+      <!-- time machine block -->
+      <article class="bg-gradient-to-br from-teal-700 via-teal-600 to-indigo-600 -mx-24 px-24 py-12">
+        <section id="time-machine" class="flex flex-col justify-center items-center">
+          <div class="flex flex-col">
+            <h3 class="text-4xl text-center mb-4">🕐 🕑 🕒</h3>
+            <p class="leading-relaxed text-center text-md md:text-xl antialiased font-medium text-gray-100">
+              Browse more projects and uncover old secrets with the <a class="block md:inline text-purple-100 underline" target="_blank" rel="noopener noreferrer" href="/time-machine/v4">Portfolio Time Machine ↗</a>
+            </p>            
+          </div>
+        </section>
+      </article>
+      <!-- // time machine block -->
+    </section>
+    <!-- // workstreams -->
+    <!-- code -->
+    <section id="code" class="confetti-dark bg-indigo-900">
+      <div class="m-auto px-8 lg:px-16 flex flex-col justify-center pt-16 pb-32 px-6 text-gray-200 antialiased">
+        <h3 class="font-bold text-gray-200 mb-4 text-2xl md:text-3xl">Code</h3>
+        <section class="lg:grid grid-cols-2 flex flex-col c-gap c-gap-6">
+          <div class="flex flex-col c-gap c-gap-4 mb-8 md:w-3/5 lg:w-full">
+            <p class="bg-indigo-900 text-lg md:pr-6">
+              I work closely with front-end developers to deliver prototypes in HTML, CSS
+              and Javascript. Understanding architecture and improving development workflows are core parts of my design process.
+            </p>
+            <p class="bg-indigo-900 text-lg">
+              Every now and then, I experiment with CSS animations, component systems and more. Here's some of the stuff
+              I've worked
+              with:
+            </p>
+            <ul class="dot-between text-lg leading-8 flex flex-wrap flex-row font-semibold antialiased bg-indigo-900">
+              <li>React</li>
+              <li>VueJS</li>
+              <li>AlpineJS</li>
+              <li>Sass</li>
+              <li>TailwindCSS</li>
+              <li>Tachyons</li>
+            </ul>
+          </div>
+          <div class="flex flex-col md:grid grid-cols-2 c-gap c-gap-6 antialiased md:w-full">
+            <a href="https://floodtheinbox.netlify.app/" target="_blank" rel="noopener noreferrer"
+              class="underline md:no-underline hover:underline flex flex-col col-span-1">
+              <img alt="Thumbnail for Flood the Inbox app" src="./assets/code/flood.png" alt="" class="rounded shadow-xl">
+              <p class="text-sm text-gray-200 font-semibold py-3">Flood the
+                Inbox</p>
+            </a>
+            <a href="https://codepen.io/dfosco/full/QMWweP/" target="_blank" rel="noopener noreferrer"
+              class="underline md:no-underline hover:underline flex flex-col col-span-1">
+              <img alt="Animated terminal window built with CSS" src="./assets/code/terminal.gif" alt="" class="rounded shadow-xl">
+              <p class="text-sm text-gray-200 font-semibold py-3">Tiny Terminal
+              </p>
+            </a>
+            <a href="http://mta.surge.sh" target="_blank" rel="noopener noreferrer"
+              class="underline md:no-underline hover:underline flex flex-col col-span-1">
+              <img alt="MTA CSS is a list of NYC subway stations built with CSS" src="./assets/code/mta.png" alt="" class="rounded shadow-xl">
+              <p class="text-sm text-gray-200 font-semibold py-3">NYC Subway CSS</p>
+            </a>
+            <a href="https://codepen.io/dfosco/pen/eYJrPqJ" target="_blank" rel="noopener noreferrer"
+              class="underline md:no-underline hover:underline flex flex-col col-span-1">
+              <img alt="Animated CSS progress timeline" src="./assets/code/timeline.gif" alt="" class="rounded shadow-xl">
+              <p class="text-sm text-gray-200 font-semibold py-3">CSS Deployment
+                Timeline</p>
+            </a>
+          </div>
+        </section>
+    </section>
+    <!-- // code -->
+    <!-- speaking -->
+    <section id="speaking" class="confetti bg-orange-100">
+      <div class="m-auto px-8 lg:px-16 flex flex-col justify-center pt-16 pb-32 px-6 text-gray-900">
+        <h3 class="font-bold text-red-700 mb-4 text-2xl md:text-3xl">Speaking & Writing</h3>
+        <section class="flex flex-col c-gap c-gap-6">
+          <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 c-gap c-gap-6">
+            <a href="https://open.spotify.com/episode/1mzUMLmcoBDZ2nYq5ryy42" target="_blank" rel="noopener noreferrer"
+              class="hover:published-underline flex flex-col col-span-1">
+              <img alt="The Manuscript Podcast logo" src="./assets/published/talks-4.png" alt="" class="rounded shadow-xl">
+              <span class="text-sm text-gray-900 font-semibold pt-4 pb-0">Where design, tech and writing meet</span>
+              <span class="text-sm text-gray-900 pb-3">The Manuscript Podcast • 2020</span>
+            </a>
+
+            <div class="flex flex-col col-span-1 cursor-not-allowed">
+              <img alt="Cover slide with talk title" src="./assets/published/talks-1.png" alt="" class="rounded shadow-xl opacity-75">
+              <span class="text-sm text-gray-800 font-semibold pt-4 pb-0">Building a Design System at Scale</span>
+              <span class="text-sm text-gray-800 pb-3">Booking Innovation Week • 2020</span>
+            </div>            
+
+            <a href="https://speakerdeck.com/dfosco/utility-css-2019" target="_blank"
+              rel="noopener noreferrer" class="hover:published-underline flex flex-col col-span-1">
+              <img alt="Slide written: You don't write CSS You Just Use CSS" src="./assets/published/talks-5.png" alt="" class="hover:published-underline rounded shadow-xl">
+              <span class="text-sm text-gray-900 font-semibold pt-4 pb-0">Utility CSS</span>
+              <span class="text-sm text-gray-900">Booking Design • 2019</span>
+            </a>
+
+            <a href="https://speakerdeck.com/dfosco/ux-design-what-why-how" target="_blank" rel="noopener noreferrer"
+              class="hover:published-underline flex flex-col col-span-1">
+              <img alt="Cover slide with talk title" src="./assets/published/talks-3.png" alt="" class="rounded shadow-xl">
+              <span class="text-sm text-gray-900 font-semibold pt-4 pb-0">UX Design – What Why How</span>
+              <span class="text-sm text-gray-900">Refugee Talent Hub • 2018</span>
+            </a>
+          </div>
+
+          <h4 class="text-base text-red-700 font-semibold pt-3 pb-0">Published</h4>
+          <div class="flex flex-col md:flex-row c-gap c-gap-8 md:w-full lg:w-4/5">
+            <a class="hover:published-underline"
+              href="https://uxdesign.cc/lets-talk-about-design-portfolios-8a56ce1e9a8e">
+              <span class="mb-1 block">Let's talk about design portfolios</span>
+              <span class="font-semibold">uxdesign.cc</span>
+            </a>
+
+            <a class="hover:published-underline" href="https://marvelapp.com/blog/designers-guide-git/">
+              <span class="mb-1 block">The Designers Guide to Git</span>
+              <span class="font-semibold">MarvelApp Blog</span>
+            </a>
+
+            <a class="hover:published-underline"
+              href="https://uxplanet.org/the-ultimate-ux-design-reading-list-db767977c855">
+              <span class="mb-1 block">A reading list for new designers</span>
+              <span class="font-semibold">UX Planet</span>
+            </a>
+          </div>
+        </section>
+    </section>
+    <!-- // speaking -->
+  </main>
+  <!-- floating button -->
+  <a x-on:scroll.window="atTop = (window.pageYOffset > 718) ? false : true;" x-show="!atTop" class="bg-gray-900 z-10 fixed bottom-0 right-0 mr-4 mb-4 px-2 py-1 text-sm text-indigo-200 font-medium rounded opacity-75
+  shadow" href="#top">
+    Back to top ↑
+  </a>
+  <!-- // floating button -->
+  <!-- footer -->
+  <footer>
+    <div class="bg-gray-900 w-full p-6 text-gray-100 text-base text-center flex flex-col c-gap c-gap-3">
+      <p>Thanks for reading!</p>
+    </div>
+
+    <div
+      class="bg-gray-800 w-full p-4 md:p-2 text-gray-500 text-xs text-gray-500 font-medium text-center flex flex-wrap justify-center c-gap c-gap-x-3">
+      <span>This website does not track any data</span>
+      <span>•</span>
+      <span>Built with TailwindCSS and Alpine.js</span>
+    </div>
+  </footer>
+  <!-- // footer -->
+</body>
+
+</html>

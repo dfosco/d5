@@ -1,0 +1,214 @@
+/* === === === === */
+/* Flex Gap Polyfill for Safari et al. */
+/* === === === === */
+
+.c-gap-wrapper {
+  display: flow-root;
+}
+
+.c-gap-wrapper::before, .c-gap-wrapper::after {
+  content: '';
+  display: table;
+}
+.c-gap, .c-gap-padding {
+  --gap-x: 0px;
+  --gap-y: 0px;
+  --gap-x-half: calc(var(--gap-x) / 2);
+  --gap-x-half-negative: calc(var(--gap-x-half) * -1);
+  --gap-y-half: calc(var(--gap-y) / 2);
+  --gap-y-half-negative: calc(var(--gap-y-half) * -1);
+  margin: var(--gap-y-half-negative) var(--gap-x-half-negative);
+}
+.c-gap > * {
+  margin: var(--gap-y-half) var(--gap-x-half);
+}
+.c-gap-padding > * {
+  padding: var(--gap-y-half) var(--gap-x-half);
+}
+
+.c-gap-0 {
+  --gap-x: 0px;
+  --gap-y: 0px;
+}
+.c-gap-1 {
+  --gap-x: 0.25rem;
+  --gap-y: 0.25rem;
+}
+.c-gap-2 {
+  --gap-x: 0.5rem;
+  --gap-y: 0.5rem;
+}
+.c-gap-3	{ 
+  --gap-x: 0.75rem; 
+  --gap-y: 0.75rem;
+}
+.c-gap-4	{ 
+  --gap-x: 1rem; 
+  --gap-y: 1rem;
+}
+.c-gap-5	{ 
+  --gap-x: 1.25rem; 
+  --gap-y: 1.25rem;
+}
+.c-gap-6	{ 
+  --gap-x: 1.5rem; 
+  --gap-y: 1.5rem;
+}
+.c-gap-8	{ 
+  --gap-x: 2rem; 
+  --gap-y: 2rem;
+}
+.c-gap-10	{ 
+  --gap-x: 2.5rem; 
+  --gap-y: 2.5rem;
+}
+.c-gap-12	{ 
+  --gap-x: 3rem; 
+  --gap-y: 3rem;
+}
+.c-gap-16	{ 
+  --gap-x: 4rem; 
+  --gap-y: 4rem;
+}
+.c-gap-20	{ 
+  --gap-x: 5rem; 
+  --gap-y: 5rem;
+}
+.c-gap-24	{ 
+  --gap-x: 6rem; 
+  --gap-y: 6rem;
+}
+.c-gap-32	{ 
+  --gap-x: 8rem; 
+  --gap-y: 8rem;
+}
+.c-gap-40	{ 
+  --gap-x: 10rem; 
+  --gap-y: 10rem;
+}
+.c-gap-48	{ 
+  --gap-x: 12rem; 
+  --gap-y: 12rem;
+}
+.c-gap-56	{ 
+  --gap-x: 14rem; 
+  --gap-y: 14rem;
+}
+.c-gap-64	{ 
+  --gap-x: 16rem; 
+  --gap-y: 16rem;
+}
+
+/* x */
+
+.c-gap-x-0 {
+  --gap-x: 0px;
+}
+.c-gap-x-1 {
+  --gap-x: 0.25rem;
+}
+.c-gap-x-2 {
+  --gap-x: 0.5rem;
+}
+.c-gap-x-3	{ 
+  --gap-x: 0.75rem; 
+}
+.c-gap-x-4	{ 
+  --gap-x: 1rem; 
+}
+.c-gap-x-5	{ 
+  --gap-x: 1.25rem; 
+}
+.c-gap-x-6	{ 
+  --gap-x: 1.5rem; 
+}
+.c-gap-x-8	{ 
+  --gap-x: 2rem; 
+}
+.c-gap-x-10	{ 
+  --gap-x: 2.5rem; 
+}
+.c-gap-x-12	{ 
+  --gap-x: 3rem; 
+}
+.c-gap-x-16	{ 
+  --gap-x: 4rem; 
+}
+.c-gap-x-20	{ 
+  --gap-x: 5rem; 
+}
+.c-gap-x-24	{ 
+  --gap-x: 6rem; 
+}
+.c-gap-x-32	{ 
+  --gap-x: 8rem; 
+}
+.c-gap-x-40	{ 
+  --gap-x: 10rem; 
+}
+.c-gap-x-48	{ 
+  --gap-x: 12rem; 
+}
+.c-gap-x-56	{ 
+  --gap-x: 14rem; 
+}
+.c-gap-x-64	{ 
+  --gap-x: 16rem; 
+}
+
+/* y */
+
+.c-gap-y-0 {
+  --gap-y: 0px;
+}
+.c-gap-y-1 {
+  --gap-y: 0.25rem;
+}
+.c-gap-y-2 {
+  --gap-y: 0.5rem;
+}
+.c-gap-y-3	{ 
+  --gap-y: 0.75rem; 
+}
+.c-gap-y-4	{ 
+  --gap-y: 1rem; 
+}
+.c-gap-y-5	{ 
+  --gap-y: 1.25rem; 
+}
+.c-gap-y-6	{ 
+  --gap-y: 1.5rem; 
+}
+.c-gap-y-8	{ 
+  --gap-y: 2rem; 
+}
+.c-gap-y-10	{ 
+  --gap-y: 2.5rem; 
+}
+.c-gap-y-12	{ 
+  --gap-y: 3rem; 
+}
+.c-gap-y-16	{ 
+  --gap-y: 4rem; 
+}
+.c-gap-y-20	{ 
+  --gap-y: 5rem; 
+}
+.c-gap-y-24	{ 
+  --gap-y: 6rem; 
+}
+.c-gap-y-32	{ 
+  --gap-y: 8rem; 
+}
+.c-gap-y-40	{ 
+  --gap-y: 10rem; 
+}
+.c-gap-y-48	{ 
+  --gap-y: 12rem; 
+}
+.c-gap-y-56	{ 
+  --gap-y: 14rem; 
+}
+.c-gap-y-64	{ 
+  --gap-y: 16rem; 
+}
